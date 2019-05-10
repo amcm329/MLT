@@ -80,7 +80,7 @@ def find_patterns(my_list,ordered_frequencies):
     #print most_frequent_element
     
     for x in range (2,len(my_list)):
-        if my_list[x-1] == last_element :#and my_list[x-2] == most_frequent_element:
+        if my_list[x-1] == last_element and my_list[x-2] == most_frequent_element:
             #CAMBIO FINAL DIFFERENCES
            if my_list[x] not in final_patterns: 
               final_differences.append((my_list[x-2],my_list[x-1],my_list[x],int(my_list[x]) - int(my_list[x-1])))
